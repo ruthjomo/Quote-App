@@ -1,1 +1,47 @@
-<p>quote works!</p>
+<div class="container-fluid">
+    <div class="main">
+      <div class="heading">
+        <h1>QUOTE OF THE DAY</h1>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <div *ngFor='let quote of quotes; let i=index'>
+            <div class="quote" >
+                <h4 id={{i}} appHighlight>{{quote.name}}</h4> 
+                <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+                <button (click)='toggleDetails(i)' class="btn btn-primary">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+        </div>
+      </div>  
+    </div> 
+  </div>
+  <div class="footer">
+  
+    <div class="footer-text">
+      <div class="list-inline">
+        <div class="list-inline-item">
+          <a href="#" target="_blank">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+        <div class="list-inline-item">
+          <a href="#" target="_blank">
+            <i class="fa fa-twitter fa-2x"></i>
+          </a>
+        </div>
+        <div class="list-inline-item">
+          <a href="#" target="_blank">
+            <i class="fa fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <p>&#169; 2020 Created By Nyururu Kelvin</p>
+    
+  </div>
