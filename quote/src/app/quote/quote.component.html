@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="main">
       <div class="heading">
-        <h1>QUOTE OF THE DAY</h1>
+        <h1>Enjoy Creating Your Own Quote!</h1>
       </div>
       <hr>
       <div class="row">
@@ -10,7 +10,7 @@
             <div class="quote" >
                 <h4 id={{i}} appHighlight>{{quote.name}}</h4> 
                 <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
-                <button (click)='toggleDetails(i)' class="btn btn-primary">Details</button>
+                <button (click)='toggleDetails(i)' class="btn btn-info">View</button>
             </div>
           </div>
         </div>
