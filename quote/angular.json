@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "quote": {
+    "Quotes": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/quote",
+            "outputPath": "dist/Quotes",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "quote:build"
+            "browserTarget": "Quotes:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "quote:build:production"
+              "browserTarget": "Quotes:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "quote:build"
+            "browserTarget": "Quotes:build"
           }
         },
         "test": {
@@ -110,15 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "quote:serve"
+            "devServerTarget": "Quotes:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "quote:serve:production"
+              "devServerTarget": "Quotes:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "quote"
+    }
+  },
+  "defaultProject": "Quotes",
+  "cli": {
+    "analytics": false
+  }
 }
