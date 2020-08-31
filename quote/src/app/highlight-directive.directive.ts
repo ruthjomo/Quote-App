@@ -3,7 +3,7 @@ import { Directive, ElementRef, HostListener} from '@angular/core';
 @Directive({
   selector: '[appHighlight]'
 })
-export class HighlightDirective {
+export class HighlightDirectiveDirective {
 
   constructor(private elem:ElementRef) {}
   @HostListener("click") onClicks(){
