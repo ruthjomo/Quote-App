@@ -38,6 +38,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Project Link
 Here is the project live link.
+https://ruthjomo.github.io/Quote-App/
 
 # Contributing
 Pull requests are welcome. For any changes that one intends to make, please open an issue first to discuss what you would like to change.
