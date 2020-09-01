@@ -5,6 +5,7 @@
 This a quote app where a user can create a quote,submit it,get upvotes and downvotes,see the number of upvotes and downvotes and delete the created quote.
 
 # Technologies Used
+
 HTML:5 for giving the structure of the webpage.
 CSS:3 for styling the webpage.
 Bootstrap for more styling of the webpage.
