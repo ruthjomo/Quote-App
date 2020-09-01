@@ -1,13 +1,14 @@
 .heading{
     height: 10%;
     width: 100%;
-    background-color: crimson;
+    background-color: lightseagreen;
+    color:black;
   }
   h4{
     color:RGB(0, 0, 128)
   }
   .quote{
-    border: 5px solid rgb(245, 238, 239);
+    border: 5px solid #eef3f5;
     padding: 10px;
     margin: 15px;
     text-align: center;
@@ -27,13 +28,13 @@
     margin-left: auto;
   }
   .container-fluid{
-    background-color: whitesmoke;
+    background-color: white;
   }
   
   .footer{
     text-align: center;
-    background-color: crimson;
-    color: white;
+    background-color: lightseagreen;
+    color: black;
     padding: 5px;
     font-size: medium;
   }
