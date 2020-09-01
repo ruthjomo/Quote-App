@@ -23,7 +23,7 @@ export class QuoteComponent implements OnInit {
     if (quote.author === ''|| quote.author === '' || quote.blogger === ''){
       alert('Kindly,all fields are required!')
     }else{
-      alert(' Quote has been added Successfully')
+      alert(' Yaay! Your Quote has been added')
     this.quotes.push(quote);
     
   }
