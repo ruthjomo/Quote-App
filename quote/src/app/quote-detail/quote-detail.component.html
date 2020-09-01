@@ -1,0 +1,13 @@
+<p class="details">
+    BY: {{quote.author}} <br>
+    Posted by: {{quote.blogger}} 
+  </p>
+  <p>Posted ~{{quote.postingDate|dateCount}}~</p>
+  <div class="like">
+    <p id="like" ><span (click)="countLikeclick()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmjlzIkpnpeht1u_xzFCAipsl4-QR4zkceGg&usqp=CAU" alt="" class="logo"></span> {{clickCounter}}</p>
+    <p id="dislike"><span (click)="countDislikeclick()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSddGaVwZGXe1zPfqKFqP9lDhIwpCXxMk3iNg&usqp=CAU" alt="dislike-emoji" class="logo"></span> {{clickCounter1}}</p>
+  
+  </div>
+  <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete</button>
+  
+     
